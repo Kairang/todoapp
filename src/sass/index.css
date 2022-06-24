@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #FDEBD0;
+}
+
+.App-header {
+  width: 100%;
+  background: #AED6F1;
+  padding: 20px;
+}
+
+.App-header .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App-header .heading .task__create {
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: #2E86C1;
+  cursor: pointer;
+  border: 2px solid #283747;
+  border-radius: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.App-header .heading .search-group .task__input {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #283747;
+  margin-right: 20px;
+  background: transparent;
+  width: 500px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.App-header .heading .search-group .task__submit {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #283747;
+  background: #2E86C1;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.App-header .heading .task__create:hover, .App-header .heading .task__submit:hover {
+  background: #cbe2f1;
+  color: #2E86C1;
+}
+
+.App-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.App-main .sidebar {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 95vh;
+  background: #A3E4D7;
+}
+
+.App-main .sidebar .selection ul li {
+  padding: 10px;
+  border-bottom: 2px solid;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.App-main .task-container {
+  -ms-flex-preferred-size: 79%;
+      flex-basis: 79%;
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.App-main .task-container .task-list {
+  border: 1px solid #000;
+  height: 200px;
+}
+/*# sourceMappingURL=index.css.map */

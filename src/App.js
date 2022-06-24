@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Heading from './components/Header/Heading';
+import TaskList from './components/Main/TaskList';
+import Select from './components/Sidebar/Select';
+import './sass/index.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Heading />
       </header>
+      <main className='App-main'>
+        <aside className='sidebar'>
+          <Select />
+        </aside>
+        <section className='task-container'>
+          <TaskList /> 
+        </section>
+      </main>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.App-main {
+    display: flex;
+    align-items: flex-start;
+    .sidebar {
+        flex-basis: 20%;
+        height: 95vh;
+        background: #A3E4D7;
+        .selection {
+            ul li {
+                padding: 10px;
+                border-bottom: 2px solid ;
+                font-size: 20px;
+                cursor: pointer;
+                list-style: none;
+            }
+        }
+    }
+    .task-container {
+        flex-basis: 79%;
+        margin: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .task-list {
+            border: 1px solid #000;
+            height: 200px;
+        }
+    }
+}

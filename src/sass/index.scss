@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // overflow: hidden;
+    // border: 1px dotted red;
+}
+.App {
+    text-align: center;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #FDEBD0;
+}
+
+@import 'header';
+@import 'main';
