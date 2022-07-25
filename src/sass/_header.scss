@@ -1,46 +1,16 @@
-.App-header {
+.heading {
     width: 100%;
+    height: 90px;
     background: #AED6F1;
-    padding: 20px;
-    .heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .task__create {
-            padding: 10px;
-            font-size: 20px;
-            color: #fff;
-            background: #2E86C1;
-            cursor: pointer;
-            border: 2px solid #283747;
-            border-radius: 10px;
-            transition: all .2s;
-        }
-        .search-group {
-            .task__input {
-                padding: 10px;
-                font-size: 20px;
-                border: 2px solid #283747;
-                margin-right: 20px;
-                background: transparent;
-                width: 500px;
-                border-radius: 10px;
-                outline: none;
-            }
-            .task__submit {
-                padding: 10px;
-                font-size: 20px;
-                border: 2px solid #283747;
-                background: #2E86C1;
-                color: #fff;
-                cursor: pointer;
-                border-radius: 10px;
-                transition: all .2s;
-            }
-        }
-        .task__create:hover, .task__submit:hover {
-            background: #cbe2f1;
-            color: #2E86C1;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    .task__input {
+        padding: 15px;
+        font-size: 20px;
+        margin-right: 40px;
+        width: 500px;
+        border-radius: 10px;
     }
 }
